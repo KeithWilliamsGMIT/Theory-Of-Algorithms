@@ -15,7 +15,7 @@
           null))
     (combinations s))))
 
-; Expected output - (() ())
+; Expected output - ((2 3 -5) (-5 1 4))
 (sublsum (list 1 2 3 4 -5))
 
 ; Expected output - ()
