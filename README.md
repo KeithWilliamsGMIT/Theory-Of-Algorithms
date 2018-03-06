@@ -22,11 +22,20 @@ This repository contains work from my 4th year theory of algorithms module for c
     '(2 1)
     ```
 
-3. Write, from scratch, two functions in Racket. The first is called lcycle. It takes a list as input and returns the list cyclically shifted one place to the left. The second is called rcycle, and it returns the list cyclically shifted one place to the right. For example:
+3. Write, from scratch, two functions in Racket. The first is called `lcycle`. It takes a list as input and returns the list cyclically shifted one place to the left. The second is called `rcycle`, and it returns the list cyclically shifted one place to the right. For example:
 
     ```
     > (lcycle (list 1 2 3 4 5))
     '(2 3 4 5 1)
     > (rcycle (list 1 2 3 4 5))
     '(5 1 2 3 4)
+    ```
+
+4. Write a function `sublsum` in Racket that takes a list (of integers) as input and returns a list of sublists of it that sum to zero. For this problem, you can use the `combinations` built-in function. Note the order of the sublists and their elements doesn’t matter. For example:
+
+    ```
+    > (sublsum (list 1 2 3 4 -5))
+    '((2 3 -5) (-5 1 4))
+    > (sublsum (list 1 2 3 4 5))
+    '()
     ```
