@@ -1,7 +1,18 @@
 # Theory Of Algorithms
 This repository contains work from my 4th year theory of algorithms module for college. For this module we were assigned a number of tasks which we had to complete.
 
+### Getting Started
+The solutions to these problems were solved using the [Racket](https://racket-lang.org/) programming language. This is a functional programming language. The easiest way to get started with racket is to install [Dr Racket](https://download.racket-lang.org/). After installing Dr Racket, clone this repository with the following command.
+
+```
+git clone https://github.com/KeithWilliamsGMIT/Theory-Of-Algorithms.git
+```
+
+Once cloned you can open the files with Dr Racket and run using the shortcut `Ctrl + R`. There is one Racket file per problem with the naming convention `problem-[number].rkt`.
+
 ### Problems
+The following is the list of problems which we had to solve.
+
 1. Write, from scratch, a function in Racket that uses a brute-force algorithm that takes a single positive integer and return true if the number is a prime and false otherwise. Call the function `decide-prime`.
 
 2. Write, from scratch, a function in Racket that takes a positive integer n0 as input and returns a list by recursively applying the following operation, starting with the input number.
@@ -81,3 +92,9 @@ This repository contains work from my 4th year theory of algorithms module for c
     > (lstq (list 4.5 5.1 6.2 7.8) (list 1.1 -0.1 6.1 3.8))
     54.61
     ```
+
+# Conclusion
+This was my first experience with using a functional programming language. Although we did not use it to build a full application, it did provide an insight into functional programming, which requires a different mindset than when programming in an imperative language such as Java. In many ways I found functional programming to be much more simple. Besides Racket, I found the problems themselves really interesting, many of which are common calculations performed by computers, but which I have never implemented myself or understood the importance of. After completing this module I feel that I have gained a better understanding, not only of functional programming, but programming as a whole.
+
+### References
++ [Racket](https://racket-lang.org/)
