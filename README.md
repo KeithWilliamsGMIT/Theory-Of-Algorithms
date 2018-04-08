@@ -94,7 +94,7 @@ The following is the list of problems which we had to solve.
     ```
 
 # Conclusion
-This was my first experience with using a functional programming language. Although we did not use it to build a full application, it did provide an insight into functional programming, which requires a different mindset than when programming in an imperative language such as Java. In many ways I found functional programming to be much more simple. Besides Racket, I found the problems themselves really interesting, many of which are common calculations performed by computers, but which I have never implemented myself or understood the importance of. After completing this module I feel that I have gained a better understanding, not only of functional programming, but programming as a whole.
+This was my first experience with using a functional programming language. Although we did not use it to build a full application, it did provide an insight into functional programming, which requires a different mindset than when programming in an imperative language such as Java. In many ways I found functional programming to be much more simple. Besides Racket, I found the problems themselves really interesting, many of which are common calculations performed by computers, but which I have never implemented myself or understood the importance of. I also felt that the scope of these problems was just right for a semester long module. After completing this module I feel that I have gained a better understanding, not only of functional programming, but programming as a whole.
 
 ### References
 + [Racket](https://racket-lang.org/)

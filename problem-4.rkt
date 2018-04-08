@@ -6,11 +6,20 @@
 ; summing all the elements in each sublist and then
 ; filtering out all sublists that do not sum to zero.
 (define (sublsum s)
+  ; This function sums all elements of a set.
+  (define (sum-all set sum)
+    (if (null? set)
+        sum
+        (sum-all(cdr set) (+ sum (car set)))))
+  
   (filter
    (lambda (x) (not (null? x)))
    (map
     (lambda (ss)
-      (if (= (apply + ss) 0)
+      ; Rather than defining another function we could also
+      ; user (apply + ss) here but that was not allowed for
+      ; these problems.
+      (if (= (sum-all ss 0) 0)
           ss
           null))
     (combinations s))))

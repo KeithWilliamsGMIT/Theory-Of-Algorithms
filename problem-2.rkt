@@ -14,7 +14,8 @@
     (cons n
         (if (= n 1)
             l
-            (if (odd? n)
+            ; We could also use the odd? function.
+            (if (= (modulo n 2) 1)
                 (collatz-list-helper (+ (* 3 n) 1) l)
                 (collatz-list-helper (/ n 2) l)))))
 

@@ -8,11 +8,12 @@
 ; when there are no more elements in the lists.
 ;
 ; Two things to note about this funtion:
-; - Both lists must be of equal size.
+; - Both lists should be of equal size. If not it will only
+;   the same number of elements that is in the shortest list.
 ; - It is very similar to the function in the previous problem.
 (define (hamming-distance l1 l2)
   (define (hamming-distance-helper l1 l2 n)
-    (if (null? l1)
+    (if (or (null? l1) (null? l2))
         n
         (if (= (car l1) (car l2))
             (hamming-distance-helper (cdr l1) (cdr l2) n)
